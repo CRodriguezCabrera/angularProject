@@ -1,3 +1,4 @@
+import { NavInterface } from './core/models/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angularProject';
+  public nav: NavInterface[] = [
+    {
+      name:"Home",
+      link:"/"
+    },
+    {
+      name:"Characters",
+      link:"/characters"
+    },
+    {
+      name:"Locations",
+      link:"/location"
+    },
+    {
+      name:"Episodes",
+      link:"/episodies"
+    },
+    {
+      name:"About",
+      link:"/about"
+    },
+  ]
 }

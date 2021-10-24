@@ -1,0 +1,18 @@
+*{
+    background-color: #040e2a;
+    color: #c4d560;
+    max-width:100% ;
+    margin: 0px auto;
+    
+}
+.home__title{
+    text-align: center;
+    padding: 40px;
+    letter-spacing: 2px;
+}
+@media (max-width: 480px) {
+    .home__title{
+        font-size: 25px;
+    }
+    
+}

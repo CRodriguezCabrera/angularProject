@@ -1,0 +1,35 @@
+.form__container{
+    text-align: center;
+    padding: 180px;
+    font-size: 20px;
+    .form__button{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+}
+.containerAll{
+    display: flex;
+    flex-wrap: wrap;
+    .img__container{
+        max-width: 50%;
+        img{
+           width: 120%;
+           vertical-align: center;
+           margin-top: 30px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .form__container{
+        margin-left: -60px;
+        padding-top: 20px;
+    }
+    .img__container{
+        max-width: 80%;
+        img{
+            margin-left: 65px;
+            
+        }
+    }
+}

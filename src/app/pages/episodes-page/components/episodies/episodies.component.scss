@@ -1,0 +1,33 @@
+
+
+h1 {
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.episodes__container{
+  
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 130px;
+    .episodes__list{
+        
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 10px;
+        img{
+            width: 70%;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+   .episodes__container{
+       margin-left: 40px;
+       
+    }
+    
+}

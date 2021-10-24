@@ -1,0 +1,11 @@
+<h1 class="episodes__title">ESPISODIOS</h1>
+<div>
+    <div class="episodes__container" *ngIf="episodesList">
+        <div class="episodes__list" *ngFor="let episode of episodesList">
+            <h2>{{episode.id}}-{{episode.name}} </h2>
+            <img src="https://i.imgur.com/v1ToCCl.jpg" alt="img episode">
+            <h2>{{episode.air_date}}</h2>
+            <h2>{{episode.episode}}</h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.container{
+    background-color: #040e2a;
+
+    width: 100%;
+    border-bottom:2px solid #c4d560; ;
+    .nav__container{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        vertical-align: center;
+        margin: 0 auto;
+        padding: 0;
+        
+        .home__button img{
+            width: 11rem;
+            text-align: center;
+            
+        }
+        img{
+            width: 60px;
+            padding: 30px 0px;
+            
+        }
+        
+    }
+}
+@media (max-width: 480px) {
+    .home__button{
+        padding-bottom: 30px;
+    }
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        li{    
+            margin: 0 auto 30px auto;
+            margin-bottom: 30px; 
+        }
+    }
+}

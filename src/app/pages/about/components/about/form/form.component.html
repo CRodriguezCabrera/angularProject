@@ -1,0 +1,43 @@
+<div class="containerAll">
+    <div class="img__container">
+        <img src="https://i.imgur.com/nQ8ew3m.jpg" alt="imagen rickYMorty">
+    </div>
+    <form class ="form__container" novalidate (ngSubmit)="onSubmit()" [formGroup]="userForm">
+        <div>
+            <label for="name">*Nombre:</label>
+            <input type="text" id="name" formControlName="name" />
+            <div *ngIf="!userForm.get('name')?.valid &&
+                (userForm.get('name')?.dirty  || submitted)">
+            El dato que has introducido no es correcto, cambielo.
+            </div>
+        </div>
+        <div>
+            <label for="country">Pais:</label>
+            <input type="text" id="country" formControlName="country" />
+            <div *ngIf="!userForm.get('country')?.valid &&
+                (userForm.get('country')?.dirty || submitted)">
+                El dato que has introducido no es correcto, cambielo.
+            </div>
+        </div>
+        <div>
+            <label for="password">*Password:</label>
+            <input type="password" id="password" formControlName="password" />
+            <div *ngIf="!userForm.get('password')?.valid &&
+                (userForm.get('password')?.dirty || submitted)">
+                Password inválida, cambiela.
+            </div>
+        </div>
+        <div>
+            <label for="repPassword">*Repetir password:</label>
+            <input type="password" id="repPassword" formControlName="repPassword" />
+            <div *ngIf="!userForm.get('repPassword')?.valid &&
+                (userForm.get('repPassword')?.dirty  || submitted)">
+                La password no coincide, cambiela.
+            </div>
+        </div>  
+        <div>
+            <button class="form__button" type="submit" [disabled]="!userForm?.valid">Enviar!</button>
+        </div>
+    </form>
+</div>
+

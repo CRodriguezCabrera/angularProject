@@ -1,0 +1,16 @@
+.detail__container{
+    text-align: center;
+    padding: 50px;
+    .detail__list{
+        list-style: none;
+    }
+    li{
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+@media (max-width: 480px) {
+    img{
+        margin-left: -50px;
+    }
+}

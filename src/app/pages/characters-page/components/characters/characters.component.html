@@ -1,0 +1,10 @@
+<h1 class=" characters__title">PERSONAJES</h1>
+<div class="characters__container" *ngIf="charactersList">
+    <div class="characters__list" *ngFor="let character of charactersList"
+    routerLink="{{character.id}}">
+        <h1>{{character.id}}-{{character.name}}</h1>
+        <img src="{{character.image}}" alt="{{character.name}}">
+    </div>
+    <!-- <button (click)="nextPage()">Next</button> -->
+</div> 
+

@@ -1,0 +1,20 @@
+.characters__title{
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    align-content: center;
+    max-width: 90%;
+    
+}
+
+.characters__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    .characters__list {
+        padding: 10px 0px;
+        margin-bottom: 20px;
+    }
+    
+}
